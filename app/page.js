@@ -11,8 +11,9 @@ export default function Home() {
   const [activeNav, setActiveNav] = useState("home");
   const [glowingCard, setGlowingCard] = useState(null);
   const [showWelcome, setShowWelcome] = useState(true);
-  const audioRef = useRef(typeof Audio !== "undefined" ? new Audio("/assets/music.mp3") : null);
-  const serverIp = "telorijo.wdb.id";
+  const audioRef = useRef(null);
+
+  const serverIp = "telorijo.web.id";
   const serverPort = "5073";
 
   useEffect(() => {
@@ -73,7 +74,7 @@ export default function Home() {
   ];
 
   const faqs = [
-    { q: "How do I join TelorIjo?", a: "Launch Minecraft Bedrock or Java Edition, go to Multiplayer, click Add Server and use our IP: telorijo.wdb.id with port 5073" },
+    { q: "How do I join TelorIjo?", a: "Launch Minecraft Bedrock or Java Edition, go to Multiplayer, click Add Server and use our IP: telorijo.web.id with port 5073" },
     { q: "Do I need mods to play?", a: "No mods are required. Just join with vanilla Minecraft." },
     { q: "Is TelorIjo cracked or premium?", a: "TelorIjo supports both cracked and premium accounts, so everyone is welcome to join." },
     { q: "Is there a Discord server?", a: "Yes. Join our Discord community to meet other players, get updates, and participate in events.", linkText: "Join Discord Server", linkUrl: "https://discord.gg/tpAW393N7" },
@@ -216,7 +217,7 @@ export default function Home() {
           <div>
             <span className="text-[11px] font-bold tracking-widest text-amber-500 uppercase">About Our Server</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">Welcome to <span className="text-amber-500">TelorIjo</span></h2>
-            <p className="mt-4 text-gray-600 leading-relaxed text-xs md:text-sm"><span className="font-semibold text-gray-800">Telorijo.wdb.id</span> is a proudly created Minecraft Survival Multiplayer (SMP) server created with the goal of connecting players in a fun, supportive, and healthy community.</p>
+            <p className="mt-4 text-gray-600 leading-relaxed text-xs md:text-sm"><span className="font-semibold text-gray-800">Telorijo.web.id</span> is a proudly created Minecraft Survival Multiplayer (SMP) server created with the goal of connecting players in a fun, supportive, and healthy community.</p>
             <p className="mt-3 text-gray-600 leading-relaxed text-xs md:text-sm">Whether you're a casual adventurer, a competitive builder, or someone who just wants to hang out and meet new friends, TelorIjo offers a welcoming space to play Minecraft.</p>
           </div>
         </div>
@@ -364,7 +365,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <div className="flex items-center gap-3">
             <img src="/assets/logo.png" alt="TelorIjo" className="w-8 h-8 rounded-full object-cover" />
-            <span className="font-bold text-white">Telorijo.wdb.id</span>
+            <span className="font-bold text-white">Telorijo.web.id</span>
             <span className="text-white/40">•</span>
             <span>© 2026</span>
           </div>
