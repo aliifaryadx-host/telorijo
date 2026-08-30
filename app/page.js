@@ -13,7 +13,7 @@ export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
   const audioRef = useRef(null);
 
-  const serverIp = "telorijo.web.id";
+  const serverIp = "play.telorijo.web.id";
   const serverPort = "5073";
 
   useEffect(() => {
